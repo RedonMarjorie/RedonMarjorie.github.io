@@ -1,1 +1,32 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Panorama</title>
+  </head>
+  <body>
+<div id="openseadragon1" style="width: 1800px; height: 900px;"></div>
+<script src="openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript">
+OpenSeadragon.setString('Tooltips.Home', 'Vue principale');
+OpenSeadragon.setString('Tooltips.ZoomIn', 'Zoomer');
+OpenSeadragon.setString('Tooltips.ZoomOut', 'Dézoomer');
+OpenSeadragon.setString('Tooltips.FullPage', 'Plein écran');
+OpenSeadragon.setString('Tooltips.SelectionToggle', 'Sélectionner une ROI');
+OpenSeadragon.setString('Tooltips.SelectionConfirm', '');
+    var viewer = OpenSeadragon({
+        id: "openseadragon1",
+        showNavigator: true,
+        sequenceMode: true,
+        preserveViewport: true,
+        tileSources: [
+            "output/panorama-ldj-same-height/tiles/tiles.dzi",
+            "output/panorama-norm/tiles/tiles.dzi",
+        ],
+        prefixUrl: "openseadragon/images/",
+    });
+
+</script>
+  </body>
+</html>

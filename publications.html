@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Marjorie Redon</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+</head>
+
+
+
+<body class="body-publications">
+	<!-- Inside the Sidebar -->
+	<div id='mySideBar' class='sidebar'>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<button onclick="window.location.href='index.html';">Home</button>
+		<button onclick="window.location.href='summary.html';">Summary</button>
+		<button onclick="window.location.href='about_me.html';">About Me</button>
+		<button onclick="window.location.href='publications.html';" id='choosen'>Publications</button>
+		<button onclick="window.location.href='experience.html';">Experience</button>
+		<button onclick="window.location.href='skills.html';">Skills</button>
+		<hr>
+		<button onclick="window.location.href='https://github.com/RedonMarjorie';">GitHub</button>
+		<button onclick="window.location.href='https://scholar.google.com/citations?hl=en&user=S51Sp7MAAAAJ';">Scholar</button>
+		<button onclick="window.location.href='https://www.linkedin.com/in/marjorie-redon-ba20011a3/';">LinkedIn</button>
+		<button onclick="window.location.href='documents/CV_Marjorie_Redon.pdf';"><i>Curriculum Vitae</i></button>
+		<button onclick="copyEmail()" id="email"><span>E-mail</span></button>
+	</div>
+
+	<!-- Top bar -->
+	<div class='navbar'>
+		<button class="openbtn" onclick="openNav()">&#9776;</button>
+		<a>Publications</a>
+	</div>
+
+	<div id='empty'></div>
+
+	<!-- Header -->
+	<div id='Head' class="header">
+		<h1>Marjorie Redon, M.Sc.</h1>
+	</div>
+
+
+
+	<!-- Main body -->
+	<div id='main'>
+		<div style="margin-top: 1%;"></div>
+
+		<!-- ICCV 2023 -->
+		<button class="oc-button" onclick="openProject('cont-iccv2023', 'content-iccv2023', 'button-iccv2023', '3D surface Approximation of the Entire Bayeux Tapestry for Improved Pedagogical Access (ICCV 2023)')" style="float: left;" id='button-ace'>3D surface Approximation of the Entire Bayeux Tapestry for Improved Pedagogical Access (ICCV 2023)</button>
+
+		<div class="container" id="cont-iccv2023">
+			<div class="snapshot">
+				<img src="pictures/Pipline_ICCV.png" alt='This is a picture of our project' class="snapimg">
+			</div>
+
+			<div class="content" id="content-iccv2023">
+				<div class="content-title">
+					<p><strong></strong></p>
+					
+				</div>
+
+				<h3>3D surface Approximation of the Entire Bayeux Tapestry for Improved Pedagogical Access (ICCV 2023)</h3>
+
+				<hr>
+
+				<div style="overflow-x: hidden; overflow-y: auto; height: 73%;">
+					<p>
+						<strong>Abstract:</strong>  The Bayeux Tapestry is an exceptional cultural heritage masterpiece by its size and the finesse of its details. Digitizing it raises a challenge, knowing that it is extremely fragile and thus lasers or invasive techniques are out of scope. In this work, we address this 3D-reconstruction challenge by introducing a pipeline to generate a high-resolution panorama of the Tapestry's geometry. It is based on a deep learning architecture that converts the RGB images of a pre-existing 2D panorama into a 2.5D normal map panorama. With a view to facilitating the Tapestry inclusive accessibility, we further show that coupling our 3D-reconstruction pipeline with a segmentation method allows {the affordable} and rapid creation of 3D-printed bas-reliefs, which can be explored tactilely by visually impaired people. 
+					</p>
+					<button onclick="window.location.href='https://hal.science/hal-04075676/document';">Paper</button>
+					<button onclick="window.location.href='projects/BayeuxPanorama.html';">BayeuxPanorama</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- ORASIS 2023 -->
+		<button class="oc-button" onclick="openProject('cont-orasis2023', 'content-orasis2023', 'button-orasis2023', 'Towards a more inclusive access to the Bayeux Tapestry by semi-automated generation of 3D objects (ORASIS 2023 Oral)')" style="float: left;" id='button-orasis2023'>Towards a more inclusive access to the Bayeux Tapestry by semi-automated generation of 3D objects (ORASIS 2023 Oral)</button>
+
+		<div class="container" id="cont-orasis2023">
+			<div class="snapshot">
+				<img src="pictures/Pipline_ORASIS.png" alt='This is a picture of our project' class="snapimg">
+			</div>
+
+			<div class="content" id="content-orasis2023">
+				<div class="content-title">
+					<p><strong></strong></p>
+					
+				</div>
+
+				<h3>Towards a more inclusive access to the Bayeux Tapestry by semi-automated generation of 3D objects (ORASIS 2023 Oral)</h3>
+
+				<hr>
+
+				<div style="overflow-x: hidden; overflow-y: auto; height: 73%;">
+					<p>
+						<strong>Abstract:</strong> Blind or partially blind people often do not have access to museum artworks which cannot be touched and which are not available in audio description. On the other hand, the manual creation of tactile representations of these artworks is usually tedious and expensive. In this work, we propose a methodology for semi-automatic creation of 3D objects in order to facilitate the inclusive accessibility of the Bayeux Tapestry. For this purpose, we use an automatic segmentation method, coupled with a 3D-reconstruction method of the micro-relief of the Tapestry -- which is actually an embroidery. The proposed device allows the inexpensive and rapid creation of 3D-printed bas-reliefs, which can be explored tactilely by blind or partially blind people.  
+					</p>
+					<button onclick="window.location.href='https://hal.science/hal-04075676/document';">Paper</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

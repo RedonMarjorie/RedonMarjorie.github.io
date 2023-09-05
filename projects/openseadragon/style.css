@@ -1,0 +1,27 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.DropDown {
+  cursor: pointer;
+  width: 45rem;
+  position: absolute;
+  top: -30vh;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background-color: lightgrey;
+  padding: 1rem;
+  box-shadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.drop-base {
+  opacity: 0;
+  transform: translateY(-0.5rem);
+  transition: transform 0.2s linear, opacity 0.1s linear;
+}
+
+.drop-base-on {
+  opacity: 1;
+  transform: translateY(0);
+}

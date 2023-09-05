@@ -1,36 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Panorama</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet"> <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-<div id="openseadragon1" style="width: 1800px; height: 900px;"></div>
-<div id="app"></div>
-<script src="openseadragon/openseadragon.min.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js'></script><script  src="./script.js"></script>
-<script type="text/javascript">
-OpenSeadragon.setString('Tooltips.Home', 'Vue principale');
-OpenSeadragon.setString('Tooltips.ZoomIn', 'Zoomer');
-OpenSeadragon.setString('Tooltips.ZoomOut', 'Dézoomer');
-OpenSeadragon.setString('Tooltips.FullPage', 'Plein écran');
-OpenSeadragon.setString('Tooltips.SelectionToggle', 'Sélectionner une ROI');
-OpenSeadragon.setString('Tooltips.SelectionConfirm', '');
-    var viewer = OpenSeadragon({
-        id: "openseadragon1",
-        showNavigator: true,
-        sequenceMode: true,
-        preserveViewport: true,
-        tileSources: [
-            "output/panorama-ldj-same-height/tiles/tiles.dzi",
-            "output/panorama-norm/tiles/tiles.dzi",
-        ],
-        prefixUrl: "openseadragon/images/",
-    });
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Marjorie Redon</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+</head>
 
-</script>
+
+
+<body class="bodyhome">
+	<div id='empty'></div>
+
+	<!-- Header -->
+	<div id='Head' class="initheader">
+		<h1>Marjorie Redon, M.Sc.</h1>
+	</div>
+	<div class='row'>
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'>
+			<button onclick="window.location.href='summary.html';" class="buttonTransparent">
+				<p>Summary</p>
+			</button>
+		</div>
+		<div class='col'>
+			<button onclick="window.location.href='about_me.html';" class="buttonTransparent">
+				<p>About Me</p>
+			</button>
+		</div>
+		<div class='col'>
+			<button onclick="window.location.href='publications.html';" class="buttonTransparent">
+				<p>Publications</p>
+			</button>
+		</div>
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'></div>
+	</div>
+
+	<div class="row">
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'>
+			<button onclick="window.location.href='experience.html';" class="buttonTransparent">
+				<p>Experience</p>
+			</button>
+		</div>
+		<div class='col'>
+			<button onclick="window.location.href='skills.html';" class="buttonTransparent">
+				<p>Skills</p>
+			</button>
+		</div>
+		<div class='col'>
+			<button onclick="window.location.href='documents/CV_Marjorie_Redon.pdf';" class="buttonTransparent">
+				<p>Download my CV</p>
+			</button>
+		</div>
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'></div>
+		<div class='col'></div>
+	</div>
+	<!-- Main body -->
+	<!-- <div id='main'>
+
+	</div> -->
+
 </body>
 </html>

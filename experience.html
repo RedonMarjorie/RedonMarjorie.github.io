@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Marjorie Redon</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+</head>
+
+
+
+<body class="body-experience">
+	<!-- Inside the Sidebar -->
+	<div id='mySideBar' class='sidebar'>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<button onclick="window.location.href='index.html';">Home</button>
+		<button onclick="window.location.href='summary.html';">Summary</button>
+		<button onclick="window.location.href='about_me.html';">About Me</button>
+		<button onclick="window.location.href='publications.html';">Publications</button>
+		<button onclick="window.location.href='experience.html';" id='choosen'>Experience</button>
+		<button onclick="window.location.href='skills.html';">Skills</button>
+		<hr>
+		<button onclick="window.location.href='https://github.com/RedonMarjorie';">GitHub</button>
+		<button onclick="window.location.href='https://scholar.google.com/citations?hl=en&user=S51Sp7MAAAAJ';">Scholar</button>
+		<button onclick="window.location.href='https://www.linkedin.com/in/marjorie-redon-ba20011a3/';">LinkedIn</button>
+		<button onclick="window.location.href='documents/CV_Marjorie_Redon.pdf';"><i>Curriculum Vitae</i></button>
+		<button onclick="copyEmail()" id="email"><span>E-mail</span></button>
+	</div>
+
+	<!-- Top bar -->
+	<div class='navbar'>
+		<button class="openbtn" onclick="openNav()">&#9776;</button>
+		<a>Experience</a>
+	</div>
+
+	<div id='empty'></div>
+
+	<!-- Header -->
+	<div id='Head' class="header">
+		<h1>Marjorie Redon, M.Sc.</h1>
+	</div>
+
+	<!-- Main body -->
+	<div id='main'>
+		<div class="info left-info">
+			<div class="title">
+				<p><strong style="color: green;">Work-study contracts:</strong> September 2020 - September 2021</p>
+			</div>
+
+			<hr>
+
+			<button id="GRA" onclick="openExperience('GRA', 'More Information', 'GRAC')" style="margin-left: 3%">
+				> More Information
+			</button>
+			<div style="overflow-x: hidden; overflow-y: auto; height: 73%; padding: 0 3% 0 3%;">
+				<div class="experience-div" id="GRAC">
+					<ul>
+						<li><strong>Classification and Segmentation of Arabidopsis (January 2020 - November 2020):</strong></li>
+						<p>Classification is one of the methods of supervised learning, which allows us to return a discrete value to be explained, such as a class or a label.</p>
+						<p>I was in charge of researching, designing and implementing the classification algorithm. I was also in charge to adapt  machine-learning model (CVAT) for the segmentation of Arabidopsis</p>
+					</ul>
+					<ul>
+						<li><strong>Video Object Segmentation (January 2019 - December 2020):</strong></li>
+						<p>I worked on the project research MAIN, Multi Attention Instance network, a deep learning pipeline for Video Object Segmentation. Further information on the publication page.</p>
+						<p>I was in charge of researching, designing and implementing the algorithm discussed on the paper.  Furthermore, I was also in charge of writing the scientific paper, currently under review.</p>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+
+		<div class="info right-info">
+			<div class="title">
+				<p><strong style="color: green;">Internship:</strong> April 2020 - June 2020</p>
+			</div>
+
+			<hr>
+
+			<button id="UTA" onclick="openExperience('UTA', 'More Information', 'UTAC')" style="margin-left: 3%">
+				> More Information
+			</button>
+
+			<div style="overflow-x: hidden; overflow-y: auto; height: 73%; padding: 0 3% 0 3%;">
+				<div class="experience-div" id="UTAC">
+					<ul>
+						<li><strong> Carbon nanotube research (April 2020 - June 2020):</strong></li>
+						<p> I had to do a bibliographic research for the characterisation of carbon nanotube sample surfaces using the XPS method. A second part of the reserch was the analysis of multi wall carbon nanotubes samples characterized by XPS before and after cleaning, annealed and heated.
+						</p>
+						<li><strong> Introduction to deep learning tools (April 2020 - Mai 2020):</strong></li>
+						<p> The main goal project was to used a neural network to perform style transfer and image captioning on Angers city theme.
+						</p>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="info left-info">
+			<div class="title">
+				<p><strong style="color: green;">Physics Tutoring:</strong> January 2019 - March 2019</p>
+			</div>
+
+			<hr>
+
+			<button id="Intern" onclick="openExperience('Intern', 'More Information', 'InternC')" style="margin-left: 3%">
+				> More Information
+			</button>
+			<div style="overflow-x: hidden; overflow-y: auto; height: 73%; padding: 0 3% 0 3%;">
+				<div class="experience-div" id="InternC">
+					<ul>
+						<li><strong> Point mechanics and electronics:</strong></li>
+						<p>  The course tackles important features on point mechanics and electronics topics. I was charge of a 5 Physics students first years group.</p>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

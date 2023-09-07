@@ -30,8 +30,14 @@ var viewer = OpenSeadragon({
         "output/panorama-norm/tiles/tiles.dzi",
         "output/panorama-ldj-same-height/tiles/tiles.dzi"    
         ],
+        
         prefixUrl: "openseadragon/images/",
     });
+    viewer.addHandler('open', function() {
+  var tiledImage = viewer.world.getItemAt(0); // Assuming you just have a single image in the viewer
+  var targetZoom = tiledImage.source.dimensions.x / viewer.viewport.getContainerSize().x;
+  viewer.viewport.zoomTo(targetZoom, null, true);
+});
 </script>
 </body>
 </html>

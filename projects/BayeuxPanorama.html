@@ -6,9 +6,10 @@
     <title>Panorama</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet"> <link rel="stylesheet" href="./openseadragon/style.css">
   </head>
-  <body>
-<div id="openseadragon1" style="width: 1800px; height: 900px;"></div>
-<div id="app"></div>
+<body>
+<p style="text-align:center"> Click on an arrow to load an other modality </p>
+<div id="openseadragon1" style="width: 1800px; height: 850px;"></div>
+<div id="app"></div> 
 <script src="openseadragon/openseadragon.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js'></script><script  src="./openseadragon/script.js"></script>
@@ -19,18 +20,18 @@ OpenSeadragon.setString('Tooltips.ZoomOut', 'Dézoomer');
 OpenSeadragon.setString('Tooltips.FullPage', 'Plein écran');
 OpenSeadragon.setString('Tooltips.SelectionToggle', 'Sélectionner une ROI');
 OpenSeadragon.setString('Tooltips.SelectionConfirm', '');
-    var viewer = OpenSeadragon({
+var viewer = OpenSeadragon({
         id: "openseadragon1",
         showNavigator: true,
         sequenceMode: true,
         preserveViewport: true,
         tileSources: [
+        "output/panorama-out-nocolor/tiles/tiles.dzi",
         "output/panorama-norm/tiles/tiles.dzi",
         "output/panorama-ldj-same-height/tiles/tiles.dzi"    
         ],
         prefixUrl: "openseadragon/images/",
     });
-
 </script>
 </body>
 </html>

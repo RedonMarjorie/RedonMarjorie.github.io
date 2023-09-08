@@ -183,7 +183,7 @@
   *     controls.  Useful for presentation since the controls are by default
   *     floated on top of the image the user is viewing.
   *
-  * @property {Boolean} [immediateRender=false]
+  * @property {Boolean} [immediateRender=true]
   *     Render the best closest level first, ignoring the lowering levels which
   *     provide the effect of very blurry to sharp. It is recommended to change
   *     setting to true for mobile devices.
@@ -462,7 +462,7 @@
   * @property {Boolean} [useCanvas=true]
   *     Set to false to not use an HTML canvas element for image rendering even if canvas is supported.
   *
-  * @property {Number} [minPixelRatio=0.5]
+  * @property {Number} [minPixelRatio=1.5]
   *     The higher the minPixelRatio, the lower the quality of the image that
   *     is considered sufficient to stop rendering a given zoom level.  For
   *     example, if you are targeting mobile devices with less bandwidth you may

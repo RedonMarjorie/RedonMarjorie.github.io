@@ -28,8 +28,7 @@ class Trigger extends React.Component {
       React.createElement(DropAnim, { visible: this.state.menuVisible, closing: this.state.menuClosing },
       this.state.menuVisible ? /*#__PURE__*/
       React.createElement(DropDown, { title: "Digital representation of the Bayeux Tapestry - XIth century", onClick: this.handleClick.bind(this) }, /*#__PURE__*/
-      React.createElement("p", null, "Credits : Ville de Bayeux, DRAC Normandie, Université de Caen Normandie, CNRS, ENS "),
-      React.createElement("a", {href: "https://www.bayeuxmuseum.com/la-tapisserie-de-bayeux/decouvrir-la-tapisserie-de-bayeux/explorer-la-tapisserie-de-bayeux-en-ligne/"}, "Link to the RBG panorama"),
+      React.createElement("a", {href: "https://www.bayeuxmuseum.com/la-tapisserie-de-bayeux/decouvrir-la-tapisserie-de-bayeux/explorer-la-tapisserie-de-bayeux-en-ligne/"}, "Link to the RGB panorama: Représentation numérique officielle de la Tapisserie de Bayeux – XIe siècle. Crédits : Ville de Bayeux, DRAC Normandie, Université de Caen Normandie, CNRS, Ensicaen, Clichés : 2017 – La Fabrique de patrimoines en Normandie"),
       React.createElement("p", null,""),
       React.createElement("a", {href: "https://journals.openedition.org/insitu/21817"}, "RBG panorama reconstruction: Katia Zidane, Abderrahim El Moataz, Régis Clouard. The reconstruction of the Bayeux tapestry panorama as a reference tool for a spatialised system of documentary information. Image-processing algorithms devoted to panorama construction and plotting of images on this panorama. OpenEdition Journals"),
       React.createElement("p", null,""),
